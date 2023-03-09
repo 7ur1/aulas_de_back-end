@@ -10,8 +10,8 @@ if($nota >= 6 && $faltas < 75){
 
 <strong>Exemplo 2</strong>
 
-<p>O aulo para ser aprovado nprecisa obter 
-    nota superior a 6 pontos ,para fazer o exame final 
+<p>O aulo para ser aprovado precisa-se obter 
+    nota superior a 6 pontos, para fazer o exame final 
     precisa ter tirado menos que 3 pontos.
     Notas menores que 3 são reprovações diretas 
 </p>

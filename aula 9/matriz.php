@@ -27,6 +27,7 @@ var_dump($tabela);
 echo $tabela[1]["marca"];
 
 //json - JavaScript Object Notation
+echo "<br><br>";
 echo json_encode($tabela);
 
 ?>

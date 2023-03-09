@@ -21,5 +21,12 @@ echo "<br>";
 echo $produto["nome"] . "<br>";
 echo $produto["marca"] . "<br>";
 echo $produto["preco"] . "<br>";
+echo "<br><br>";
+
+//estrutura de repetição especifica
+//para percorrer vectores
+foreach($produto as $key => $value){
+     echo$value ."<br>";
+}
 
 ?>

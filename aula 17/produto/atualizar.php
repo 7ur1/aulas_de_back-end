@@ -2,8 +2,13 @@
 
 require_once "../conexao.php";
   
-if(isset($_POST["nome"]) && isset($_POST["descricao"])&& isset($_POST["preco"]) && isset($_POST["foto"]))
+if(isset($_POST["nome"]) && isset($_POST["descricao"])&& isset($_POST["preco"]))
+
 {
+
+//inclui o arquivo para salvar_foto.php do uploads 
+require_once "salvar_foto.php";
+
 $id = $_POST["id"];
 $nome = $_POST["nome"];
 $descricao = $_POST["descricao"];

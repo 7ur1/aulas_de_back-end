@@ -28,6 +28,9 @@ div{
 <?php
 
 $tabuada = 1;
+
+//Esta instrução é usada quando não sabemos quantas vezes um determinado bloco de instruções precisa ser repetido. 
+//Com ele, a execução das instruções vai continuar até que uma condição seja verdadeira.
 while($tabuada <= 10){
 echo "<div>";
 $contador = 0;    

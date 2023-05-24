@@ -20,7 +20,7 @@
 
 <?php
 /*
-Para passr de ano é necessario tirar no minimo 6 pontos en cada diciplina.
+Para passar de ano é necessario tirar no minimo 6 pontos en cada diciplina.
 Murilo tirou ....Ele foi aprovado ou não?"
 */
 $nota_do_murilo = 6;

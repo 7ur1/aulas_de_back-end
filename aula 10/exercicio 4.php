@@ -21,6 +21,7 @@ $mat3 = [
 ];
 $tabela = [$mat1,$mat2,$mat3];
 
+//foreach é usado para facilitar a iteração de estruturas como arrays, objetos e outros tipos que são iteráveis.
 foreach($tabela as $key => $value) {
     echo $value["nome"] ."<br>". $value["nota1"] ."<br>". $value["nota2"] ."<br>";
   }

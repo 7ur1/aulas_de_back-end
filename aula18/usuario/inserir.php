@@ -15,8 +15,7 @@ $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
 $foto =  $nome_arquivo;
 
 //String com o comando SQL para ser executado no DB
-$sql = "INSERT INTO `usuario`(`nome`, `login`, `senha`, `foto`) 
-        VALUES (?, ?, ?, ?);";
+$sql = "INSERT INTO `usuario`(`nome`, `login`, `senha`, `foto`) VALUES (?, ?, ?, ?);";
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);

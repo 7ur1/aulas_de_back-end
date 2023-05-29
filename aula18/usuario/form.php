@@ -29,10 +29,10 @@
        value="<?php echo $usuario['senha'] ?? ""; ?>"><br>
 
        <label for="foto" class="form-label">Foto</label><br>
-       <input class="form-control" type="file  name="foto" id="foto"><br>
+       <input class="form-control" type="file"  name="foto" id="foto"><br>
 
        <br>
-       <button type="submit" class="btn btn-info ">Cadastrar</button>
+       <button type="submit" class="btn btn-primary ">Cadastrar</button>
 
     </form>
 

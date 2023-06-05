@@ -28,7 +28,7 @@ $resultado = $comando->get_result();
 $usuario = $resultado->fetch_assoc();
   
 if($usuario){
-    echo "Existe um usuario com esse login";
+   
     if(password_verify($senha,$usuario['senha'])){
         //inicia a sessão
         session_start();
@@ -39,12 +39,12 @@ if($usuario){
         //redireciona para produto
         header("Location: ../produto/index.php");
        
-        echo "A senha é valida";
+        $erro_login = "A senha é valida";
 }else{
-    echo "Senha incorreta";
+    $erro_login = "Senha incorreta";
 }
  }else{
-    echo "Não existe um usuario com esse login";
+    $erro_login =  "Não existe um usuario com o login informado";
  }
 
 }

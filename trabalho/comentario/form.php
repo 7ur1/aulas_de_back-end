@@ -18,7 +18,7 @@
        <textarea  name="data" id="data"><?php echo $comentario['data'] ?? ""; ?></textarea><br>
 
        <label for="autor">Autor</label><br>
-       <input type="file" name="autor" id="autor"><br>
+       <input type="text" name="autor" id="autor"><br>
 
        <label for="estrela">Estrela</label><br>
        <input type="number" step="0.01" name="estrela" id="estrela" value="<?php echo $comentario['estrela'] ?? "0.00"; ?>"><br>

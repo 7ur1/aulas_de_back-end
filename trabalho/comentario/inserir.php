@@ -12,14 +12,14 @@ $autor =     $_POST["autor"];
 $estrela = $_POST["estrela"];
 
 //String com o comando SQL para ser executado no DB
-$sql = "INSERT INTO `comentario`(`texto`, `data`, `autor`, `estrela`) 
+$sql = "INSERT INTO `comentarios`(`texto`, `data`, `autor`, `estrela`) 
         VALUES (?, ?, ?, ?);";
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);
 
 //adiciona os valores nos parâmetros
-$comando->bind_param("ssss", $texto, $data, $autor, $estrela);
+$comando->bind_param("sssd", $texto, $data, $autor, $estrela);
 
 //executa o SQL - Comando no Banco de Dados
 $comando->execute();

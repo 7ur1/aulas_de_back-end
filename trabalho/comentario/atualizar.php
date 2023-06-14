@@ -4,7 +4,7 @@
 require_once "../conexao.php";
 
 if(isset($_POST["texto"]) && isset($_POST["data"]) 
-           && isset($_POST["autor"]))
+           && isset($_POST["autor"]) && isset($_POST["estrela"]))
 {
 
 $id =        $_POST["id"];        

@@ -11,7 +11,7 @@ if(isset($_GET['id']))
 $id = $_GET['id'];
 
 //String com o comando SQL para ser executado no DB
-$sql = "DELETE FROM `comentario` WHERE  `idcomentario`= ? ; ";
+$sql = "DELETE FROM `comentarios` WHERE  `idcomentario`= ? ; ";
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);

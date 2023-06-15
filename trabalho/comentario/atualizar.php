@@ -11,18 +11,18 @@ $id =        $_POST["id"];
 $texto =      $_POST["texto"];
 $data = $_POST["data"];
 $autor =     $_POST["autor"];
-$estrela = $_POST["estrelas"];
+$estrela = $_POST["estrela"];
 
 //String com o comando SQL para ser executado no DB
-$sql = "UPDATE comentario SET 
-`texto`= ?, `data`= ?, `autor`= ?, `estrelas`= ? 
+$sql = "UPDATE comentarios SET 
+`texto`= ?, `data`= ?, `autor`= ?, `estrela`= ? 
 WHERE  `idcomentario`= ? ";
 
 //Prepara o SQL para ser executado no banco de dados
 $comando = $conexao->prepare($sql);
 
 //adiciona os valores nos parâmetros
-$comando->bind_param("ssssi", $texto, $data, $autor, $estrela, $id);
+$comando->bind_param("sssdi", $texto, $data, $autor, $estrela, $id);
 
 //executa o SQL - Comando no Banco de Dados
 $comando->execute();
